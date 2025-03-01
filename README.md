@@ -20,7 +20,7 @@
 **POST**:<br>
 `localhost:8080/api/v1/auth/authenticate`
 
-**Body:<br>
+**Body:**<br>
 `
 {
     "email": "name@gmail.com",
