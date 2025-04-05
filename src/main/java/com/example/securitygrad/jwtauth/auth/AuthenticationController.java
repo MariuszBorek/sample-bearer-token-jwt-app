@@ -1,4 +1,4 @@
-package com.example.securitygrad.auth;
+package com.example.securitygrad.jwtauth.auth;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

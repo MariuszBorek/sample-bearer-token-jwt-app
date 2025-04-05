@@ -1,4 +1,4 @@
-package com.example.securitygrad.user;
+package com.example.securitygrad.jwtauth.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

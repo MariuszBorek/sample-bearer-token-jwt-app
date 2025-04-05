@@ -15,6 +15,7 @@ Edit Configuration -> + -> Remote JVM Debug<br>
 **b) Run in debug mode:**<br>
 `./gradlew bootRun --debug-jvm`
 
+# POSTMAN
 ### 2. Register User in DB and get JWT token
 
 **POST**:<br>
@@ -41,10 +42,26 @@ Edit Configuration -> + -> Remote JVM Debug<br>
 }
 `
 
-### 2. Use received token in Authentication Header
+---
+
+# UI - Html & JavaScript
+### 3. Use received token in Authentication Header
 
 **GET**:<br>
 `localhost:8080/api/v1/demo-controller`
 
 **Headers**:<br>
 `Authorization: Bearer <token>`
+
+##### 1. Run UI
+
+**a) open terminal**<br>
+
+**b) Go to UI folder**<br>
+
+**c) run command in terminal:**<br>
+`node server.js`
+
+
+
+

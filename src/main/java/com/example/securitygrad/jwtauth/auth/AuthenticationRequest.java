@@ -1,4 +1,4 @@
-package com.example.securitygrad.auth;
+package com.example.securitygrad.jwtauth.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AuthenticationResponse {
-    private String token;
+public class AuthenticationRequest {
+    private String email;
+    private String password;
 }

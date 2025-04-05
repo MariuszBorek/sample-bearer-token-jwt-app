@@ -1,4 +1,4 @@
-package com.example.securitygrad.config;
+package com.example.securitygrad.jwtauth.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

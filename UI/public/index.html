@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <title>Zabezpieczenia W Applikacji Webowej</title>
+</head>
+<body>
+
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+     <!-- Add User -->
+    <div>
+        <h2>Add User</h2>
+        <div>
+            <form id="registerForm">
+                <input type="text" id="firstname" name="firstname" placeholder="Imię" value="mariusz" required>
+                <input type="text" id="lastname" name="lastname" placeholder="Nazwisko" value="mariusz" required>
+                <input type="email" id="email" name="email" placeholder="Email" value="mariusz@gmail.com" required>
+                <input type="password" id="password" name="password" placeholder="Hasło" value="1234" required>
+                <button type="submit">Add User</button>
+              </form>
+        </div>
+        <div>
+            <div>
+                <p>Bearer Token zostanie tutaj wyświetlony:</p>
+            </div>
+            <div id="bearerToken" class="displayWindow"></div>
+        </div>
+    </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+<!-- Get Bearer Token if user exists -->
+<div>
+    <h2>Log in User</h2>
+    <div>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Wprowadź email" value="mariusz@gmail.com" required>
+    
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password" placeholder="Wprowadź hasło" value="1234" required>
+    
+            <button type="submit">Zaloguj się</button>
+        </form>
+    </div>
+    <div>
+        <div>
+            <p>Bearer Token zostanie tutaj wyświetlony:</p>
+        </div>
+        <div id="bearerTokenLogin" class="displayWindow"></div>
+    </div>
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+<!-- Get secured Resources -->
+
+<div>
+    <h2>Get Secured Resources</h2>
+    <div>
+        <button id="getDataButton">Pobierz dane</button>
+    </div>
+    <div>
+        <p>Zostaną wyswietlone dane chronione, musisz się najpierw zalogować:</p>
+    </div>
+    <div id="securedData" class="displayWindow"></div>
+</div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+<!-- CSRF - nie jest potrzebne jezeli uzywamy Bearer Token w prawidłowy sposób -->
+
+<div>
+    <h2>Aktualizacja profilu z tokenem CSRF</h2>
+    <div>
+        <form id="profileForm">
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Zapisz</button>
+        </form>
+    </div>
+    <div id="csrfResponse" class="displayWindow"></div>
+</div>
+
+</body>
+</html>

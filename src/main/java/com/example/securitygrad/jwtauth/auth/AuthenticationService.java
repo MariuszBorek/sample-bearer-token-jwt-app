@@ -1,10 +1,10 @@
-package com.example.securitygrad.auth;
+package com.example.securitygrad.jwtauth.auth;
 
 
-import com.example.securitygrad.config.JwtService;
-import com.example.securitygrad.user.Role;
-import com.example.securitygrad.user.UserRepository;
-import com.example.securitygrad.user.User;
+import com.example.securitygrad.jwtauth.config.JwtService;
+import com.example.securitygrad.jwtauth.user.Role;
+import com.example.securitygrad.jwtauth.user.UserRepository;
+import com.example.securitygrad.jwtauth.user.User;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
