@@ -1,12 +1,10 @@
-package com.example.securitygrad.controller;
+package com.example.securitygrad.controller.csrf;
 
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.SpringServletContainerInitializer;
 import org.springframework.web.bind.annotation.*;
 
 
-import java.util.HashMap;
 import java.util.Map;
 
 @RestController

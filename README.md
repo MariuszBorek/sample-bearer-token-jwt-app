@@ -63,5 +63,8 @@ Edit Configuration -> + -> Remote JVM Debug<br>
 `node server.js`
 
 
+# TODO
 
-
+- [ ] Add script to run UI and backend
+- [ ] Add Dockerfile
+- [ ] Add Docker Compose

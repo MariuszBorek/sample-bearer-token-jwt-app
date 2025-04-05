@@ -1,4 +1,4 @@
-package com.example.securitygrad.controller;
+package com.example.securitygrad.jwtauth.controller;
 
 
 import org.springframework.http.ResponseEntity;
