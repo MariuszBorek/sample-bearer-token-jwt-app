@@ -63,7 +63,7 @@
     <div>
         <h2>[GET method] Get Secured Resources z Bearer token(JWT)</h2>
         <div>
-            <button id="getDataButton">Pobierz dane</button>
+            <button id="getDataButton" class="mybutton">Pobierz dane</button>
         </div>
         <div>
             <p>Zostaną wyswietlone dane chronione, musisz się najpierw zalogować:</p>
@@ -78,6 +78,11 @@
     <div>
         <h2>[POST method] Aktualizacja profilu z Bearer token(JWT) - (CSRF jest wyłaczone)</h2>
         <div>
+            <p>
+                ustawia równie cookie httpOnly, czyli przegladarka bedzie dodawać automatycznie do kazdego zapytania
+            </p>
+        </div>
+        <div>
             <form id="profileForm">
                 <label for="username">Nazwa użytkownika:</label>
                 <input type="text" id="username" name="username" required>
@@ -85,6 +90,16 @@
             </form>
         </div>
         <div id="csrfResponse" class="displayWindow"></div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+    <!-- set Cookie -->
+
+    <div>
+        <h2>Cookies powinno się ustawić automatycznie po wyslaniu powyszego formularza</h2>
+        <div>
+            <button id="sampleGetButton" class="mybutton">Pobierz dane</button>
+        </div>
     </div>
 
 </body>

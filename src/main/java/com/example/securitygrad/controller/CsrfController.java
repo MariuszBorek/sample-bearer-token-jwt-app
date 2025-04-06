@@ -1,4 +1,4 @@
-package com.example.securitygrad.controller.csrf;
+package com.example.securitygrad.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.web.csrf.CsrfToken;

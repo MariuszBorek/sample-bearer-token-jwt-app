@@ -149,7 +149,7 @@ document.getElementById("profileForm").addEventListener("submit", function (e) {
     //   console.log("Token CSRF:", csrfToken);
     //     console.log("Token:", token);
 
-    fetch(`${HOSTNAME}api/v1/demo-csrf-controller`, {
+    fetch(`${HOSTNAME}api/v1/demo-update-controller/update`, {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${token}`, // Dodanie tokena (zakładając, że masz zmienną 'token')
@@ -177,6 +177,34 @@ document.getElementById("profileForm").addEventListener("submit", function (e) {
             document.getElementById("csrfResponse").innerText = "Błąd: " + error.message;
         });
 });
+
+// -------------------------------------------------------------------------------------------------
+// set cookie
+document.getElementById("sampleGetButton").addEventListener("click", function () {
+
+
+    fetch(`${HOSTNAME}api/v1/demo-update-controller/sample-get-button`, {
+        method: 'GET', // Określamy metodę HTTP (GET)
+        headers: {
+            'Authorization': `Bearer ${token}`
+            // 'Content-Type': 'application/json' // Możesz dodać nagłówek, jeśli przesyłasz dane w formacie JSON
+        },
+        credentials: "include"  // Jeśli chcesz wysłać ciasteczka (cookies) razem z zapytaniem
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.text(); // Odczytanie odpowiedzi
+        }
+        throw new Error('Network response was not ok');
+      })
+      .then(data => {
+        console.log('Response from server:', data); // Wyświetlenie odpowiedzi (np. komunikatu o ustawieniu ciasteczka)
+      })
+      .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+      });
+});
+
 
 
 

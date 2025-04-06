@@ -107,8 +107,8 @@ p a:hover {
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
-/* Button with id="getDataButton" */
-#getDataButton {
+/* Button with class mybutton */
+.mybutton {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -123,15 +123,15 @@ p a:hover {
     transition: background-color 0.3s ease;
 }
 
-#getDataButton:hover {
+.mybutton:hover {
     background-color: #45a049;
 }
 
-#getDataButton:active {
+.mybutton:active {
     background-color: #3e8e41;
 }
 
-#getDataButton:disabled {
+.mybutton:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
 }
