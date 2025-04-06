@@ -20,7 +20,7 @@ Edit Configuration -> + -> Remote JVM Debug<br>
 
 ---
 
-# POSTMAN
+## POSTMAN
 ### 2. Register User in DB and get JWT token
 
 **POST**:<br>
@@ -57,19 +57,20 @@ Edit Configuration -> + -> Remote JVM Debug<br>
 
 ---
 
-# UI - Html & JavaScript
+## UI - Html & JavaScript
 ##### 1. Run UI
 
-**a) open terminal**<br>
+**a) Open terminal and go to UI folder**<br>
 
-**b) Go to UI folder**<br>
-
-**c) run command in terminal:**<br>
+**b) Run command in terminal:**<br>
 `node server.js`
+
+**c) Open browser and go to:**<br>
+`https://localhost:3443`
 
 ---
 
-# TODO
+## TODO
 
 - [ ] Add script to run UI and backend
 - [ ] Add Dockerfile

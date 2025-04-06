@@ -83,7 +83,7 @@ public class SecurityConfiguration {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000"));  // Frontend URL
+        configuration.setAllowedOrigins(Arrays.asList("https://localhost:3443"));  // Frontend URL
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));  // Dozwolone metody
         configuration.setAllowedHeaders(Arrays.asList("*", "Authorization", "Content-Type", "X-CSRF-TOKEN"));  // Dozwolone nagłówki
         configuration.setAllowCredentials(true);  // Jeśli używasz ciasteczek/tokenów
