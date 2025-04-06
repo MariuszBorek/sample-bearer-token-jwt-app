@@ -1,6 +1,6 @@
 // -------------------------------------------------------------------------------------------------
 // Zmienne globalne
-let HOSTNAME = "http://localhost:8080/";
+let HOSTNAME = "https://localhost:8443/";
 
 
 let token = "";
